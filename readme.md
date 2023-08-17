@@ -31,12 +31,14 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 2: Set Up Unity & VS Code  
 
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-<p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Welcome To The Course](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
+    > Summary: Install and Configure Software to Develop Game
+    > - Unity Hub
+    > - Unity Editor 2022.2.6f1 is the stable version used in coures
+    > - Visual Studio w/Extensions
+    >   - Microsoft C#
+    >   - Unity Code Snipets
+    > - Set Unity to use VS Code as Editor
+<p> </p>
 
 - Part 3: Networking Basics 
 

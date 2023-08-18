@@ -33,7 +33,7 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
     > Summary: Install and Configure Software to Develop Game
     > - Unity Hub
-    > - Unity Editor 2022.2.6f1 is the stable version used in coures
+    > - Unity Editor 2022.2.6f1 is the stable version used in course
     > - Visual Studio w/Extensions
     >   - Microsoft C#
     >   - Unity Code Snipets
@@ -54,12 +54,32 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 4: Installation & Setup 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Setup Unity and Testing Sample
+    > - Install Unity Editor 2022.2.6f1
+    > - Create Project
+    > - Add Networking Packages
+    >   - NetCode for GameObjects
+    >   - Multiplayer
+    >   - MatchMaker
+    >   - Cinemachine
+    >   - Input System
+    > - Create Sample Project
+    >   - Add Network Manager
+    >       - Handles Player Connecting
+    >       - Handles Server Setup
+    >       - Handles Connection Approval
+    >       - Handles Transpor (data transmission)
+    >       - Network Prefabs
+    >   - Add Unity Transport (in Network Manager)
+    >   - Add Player (Test Object)
+    >       - Sprite
+    >       - Network Object (Used to assign object to a player session)
+    >   - Add Button (Join Session)
+    >       - Join C# Script
+    >       - Link Script Callback
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Installation & Setup](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Installation & Setup](./Assets/Images/Thumb%20-%20Section1-Lesson4.png)](./Assets/Images/Section1-Lesson4.png)
 
 - Part 5:Community & Support 
  

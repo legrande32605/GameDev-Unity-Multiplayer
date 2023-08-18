@@ -42,12 +42,15 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 3: Networking Basics 
 
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Basics of Unity Netcode
+    > - (netcode documentation)[docs-multiplayer.unity3d.com/netcode/current/about]
+    >   - Multiplayer Networking Terminology
+    >   - Lag Conceptual Knowledge
+    >   - Configuration
+    >   - Listen Server and Host architecture
+    > - Client-Server Model (Self-Hosted)
+    > - Client-Server Model (Dedicated)
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Networking Basics](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 4: Installation & Setup 
  

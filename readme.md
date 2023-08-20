@@ -81,22 +81,17 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Installation & Setup](./Assets/Images/Thumb%20-%20Section1-Lesson4.png)](./Assets/Images/Section1-Lesson4.png)
 
-- Part 5:Community & Support 
+- Part 5: Community & Support 
  
     > Summary: Lists options for community support
-
 <p> </p> 
-
 
 - Part 6: Accessing Our Projects 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: GameDev.TV's GitHub Repositories
+    > - https://github.com/GameDevTV
+    > - What is the REPO URL for this course?
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Accessing Our Projects](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
-
 
 ### Section 2 - Core Gameplay
 

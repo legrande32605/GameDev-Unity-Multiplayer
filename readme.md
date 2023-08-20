@@ -90,7 +90,7 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
  
     > Summary: GameDev.TV's GitHub Repositories
     > - https://github.com/GameDevTV
-    > - What is the REPO URL for this course?
+    > - https://gitlab.com/GameDevTV/unity-multiplayer/unity-multiplayer
 <p> </p> 
 
 ### Section 2 - Core Gameplay
@@ -102,12 +102,49 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 2: Importing Assets 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Importing Assets for game and creating player PreFab
+    > - Importing Assets
+    >   - Download TankAssets.zip
+    >   - Copy TankAssets.unitypackage out of zip file
+    >   - Drag and drop into project
+    >   - Import into Art folder
+    > - Create Player Prefab
+    >   - Remove Previous Sprite Component
+    >   - Restrict Network Transform to X and Y position only
+    >       - Tank Treads
+    >           - Add child object for Treads
+    >           - Add Tread sprite
+    >           - Add Network Transform 
+    >           - Restrict Network Transform to Z rotation only
+    >           - Add Box Colider
+    >       - Tank Body (child of Treads)
+    >           - Add Sprite Render
+    >           - Add Turret sprite
+    >       - Turret Pivot (what the turret pivots around)
+    >           - Add child object for TurretPivot
+    >           - Add Network Transform
+    >           - Restrict Network Transform to Z rotation only
+    >       - Turret (child of Turret Pivot)
+    >           - Add Sprite Render
+    >           - Add Turret sprite
+    >           - Line up Turret so it spins properly on the body
+    >       - Machine Gun Pivot (Child of Turret)
+    >           - Expansion beyond scope of course
+    >           - Add Network Transform
+    >           - Restrict Network Transfor to Z rotation only
+    >       - Machine Gun (child of Machine Gun Pivot)
+    >           - Expansion beyond scope of course
+    >           - Add Sprite Render
+    >           - Add Machine Gun Sprite
+    >           - Line up so it spins around properly
+    >   - Graphics Sorting
+    >       - Add new sorting layer (player)
+    >       - Set Player Sprites to the Player sorting Layer
+    >       - Set Sprite order on all sprites to make tank properly
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Importing Assets](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Importing Assets](./Assets/Images/Thumb%20-%20Section2-Lesson2.png)](./Assets/Images/Section2-Lesson2.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Importing Assets](./Assets/Images/Thumb%20-%20Section2-Lesson2a.png)](./Assets/Images/Section2-Lesson2a.png)
 
 - Part 3: Reading Input 
  

@@ -97,12 +97,8 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 1: Section Intro - Core Gameplay 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Nathan introduces you to the section of the course where you’ll be creating the Core Gameplay features.
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Section Intro - Core Gameplay](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 2: Importing Assets 
  

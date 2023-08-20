@@ -83,12 +83,10 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 5:Community & Support 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Lists options for community support
+
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Community & Support](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 6: Accessing Our Projects 
  

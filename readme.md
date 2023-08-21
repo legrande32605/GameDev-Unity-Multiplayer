@@ -43,7 +43,7 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 - Part 3: Networking Basics 
 
     > Summary: Basics of Unity Netcode
-    > - (netcode documentation)[docs-multiplayer.unity3d.com/netcode/current/about]
+    > - (netcode documentation)[https://docs-multiplayer.unity3d.com/netcode/current/about]
     >   - Multiplayer Networking Terminology
     >   - Lag Conceptual Knowledge
     >   - Configuration
@@ -79,7 +79,7 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
     >       - Link Script Callback
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Installation & Setup](./Assets/Images/Thumb%20-%20Section1-Lesson4.png)](./Assets/Images/Section1-Lesson4.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Two Simple Player Objects](./Assets/Images/Thumb%20-%20Section1-Lesson4.png)](./Assets/Images/Section1-Lesson4.png)
 
 - Part 5: Community & Support 
  
@@ -143,14 +143,31 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
     >       - Set Sprite order on all sprites to make tank properly
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Importing Assets](./Assets/Images/Thumb%20-%20Section2-Lesson2.png)](./Assets/Images/Section2-Lesson2.png)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Importing Assets](./Assets/Images/Thumb%20-%20Section2-Lesson2a.png)](./Assets/Images/Section2-Lesson2a.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Artwork](./Assets/Images/Thumb%20-%20Section2-Lesson2.png)](./Assets/Images/Section2-Lesson2.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Tank Prefab](./Assets/Images/Thumb%20-%20Section2-Lesson2a.png)](./Assets/Images/Section2-Lesson2a.png)
 
 - Part 3: Reading Input 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Script to read Unity Input and feed into the player system
+    > - Add Action Controls Object (with integrated C# script)
+    > - Add Keyboard and Mouse control set
+    > - Add Movement Set
+    >   - Bind WASD
+    >   - Bind Arrows
+    >   - Bind Z/C (secondary weapon rotation)
+    >   - Bind Page Up/Down (secondary weapon rotation)
+    > - Add Primary Fire Set
+    >   - Mouse Left Click
+    >   - Keyboard <spacebar>
+    > - Add Secondary Fire Set
+    >   - Mouse Right Click
+    >   - Keyboard <x key>
+    > - Create InputReader Script
+    >   - Read Movement
+    >   - Read Primary Fire
+    >   - Read Secondary Fire
+    > - Created Listeners for the InputReader
+    > - Created Test Script for subscribing the movement listener and output to debug console
 <p> </p> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Reading Input](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)

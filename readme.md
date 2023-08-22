@@ -170,16 +170,18 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
     > - Created Test Script for subscribing the movement listener and output to debug console
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Reading Input](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
-
 - Part 4: Network Authority 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Difference between Server and Client Authority and how it impacts the game
+    > - Add a Hosting button so a build can be host.
+    > - Moved script to canvas and relinked Hosting and Client buttons to the script through the canvas object
+    > - Discussion of Lantency [MS Documentation](https://docs-multiplayer.unity3d.com/netcode/current/learn/lagandpacketloss)
+    > - Give PlayerPrefab authority over movement by inheriting Network Transform.
+    > - Remove NetworkTransform from PlayerPrefab objects and put on our new ClientNetworkTransform
+
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Network Authority](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Network Authority](./Assets/Images/Thumb%20-%20Section2-Lesson4.png)](./Assets/Images/Section2-Lesson4.png)
 
 - Part 5: Player Movement 
  

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 764170651240421308}
   - component: {fileID: 764170651240421298}
-  - component: {fileID: 5348309023521569206}
+  - component: {fileID: 1652752734938801579}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &5348309023521569206
+--- !u!114 &1652752734938801579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 764170651240421299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: a3a7abbec77f92f439e66c93d6100b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -255,7 +255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5996701093203925665}
-  - component: {fileID: 6868690786648574819}
+  - component: {fileID: 3114553544080042062}
   m_Layer: 0
   m_Name: MachineGunPivot
   m_TagString: Untagged
@@ -279,7 +279,7 @@ Transform:
   m_Father: {fileID: 3701459557559733042}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &6868690786648574819
+--- !u!114 &3114553544080042062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5883797418237117237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: a3a7abbec77f92f439e66c93d6100b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 0
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8223377172538726923}
-  - component: {fileID: 179778836935278638}
+  - component: {fileID: 3634722619960357471}
   m_Layer: 0
   m_Name: TurretPivot
   m_TagString: Untagged
@@ -338,7 +338,7 @@ Transform:
   m_Father: {fileID: 764170651240421308}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &179778836935278638
+--- !u!114 &3634722619960357471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6571932105353533062}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: a3a7abbec77f92f439e66c93d6100b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 0
@@ -373,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3538944182506070981}
-  - component: {fileID: 7073136345375139893}
+  - component: {fileID: 6885712350295043408}
   - component: {fileID: 251016125105886420}
   - component: {fileID: 6409000113272850964}
   m_Layer: 0
@@ -399,7 +399,7 @@ Transform:
   m_Father: {fileID: 764170651240421308}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7073136345375139893
+--- !u!114 &6885712350295043408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6646027803991947591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: a3a7abbec77f92f439e66c93d6100b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 0

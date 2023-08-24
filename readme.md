@@ -185,12 +185,16 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 5: Player Movement 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Movement Code for player connected to Input Reader
+    > - Created PlayerMovement.cs Script
+    > - Linked up References to InputReader, Treads Transform, and Rigidbody of Tank
+    > - Added/Removed Subscriptions to InputReader's MoveEvent in Spawn and Despawn methods.
+    > - Generated Method to process the movement commands
+    > - Added PlayerTank rotation on treads in the Update Method
+    > - Added FixedUpdate Method to handle Rigidbody Transform
+    > - Added code to move PlayerTank RigidBody (velocity)
+    > - Added a background image and adjusted camera
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Player Movement](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 6: Player Aiming 
  

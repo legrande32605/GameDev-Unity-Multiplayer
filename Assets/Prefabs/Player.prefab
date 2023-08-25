@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1652752734938801579}
   - component: {fileID: 5351499770205962628}
   - component: {fileID: 309738577284324049}
+  - component: {fileID: -3689450285673136877}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -121,8 +122,24 @@ MonoBehaviour:
   inputReader: {fileID: 11400000, guid: ad8efcab08b29654582b8cfac11e9f4d, type: 2}
   bodyTransform: {fileID: 3538944182506070981}
   rb: {fileID: 5351499770205962628}
-  movementSpeed: 4
+  movementSpeed: 5
   turingRate: 90
+--- !u!114 &-3689450285673136877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764170651240421299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbe1239a76be984b9bf0c9d0140eaa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: ad8efcab08b29654582b8cfac11e9f4d, type: 2}
+  turretTransform: {fileID: 8223377172538726923}
+  machinegunTransform: {fileID: 5996701093203925665}
+  mgTuringRate: 90
 --- !u!1 &1169699651852703973
 GameObject:
   m_ObjectHideFlags: 0

@@ -53,6 +53,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Aim Primary"",
+                    ""type"": ""Value"",
+                    ""id"": ""b4d2d74c-b980-487a-b300-ea1b7017d56f"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Aim Secondary"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3018524-b55a-4b60-9ec7-a403832bce6a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -211,13 +229,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""72f089d7-7d68-42ff-8b3f-486dac9a97f8"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard & Mouse"",
+                    ""action"": ""Aim Primary"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""ZC"",
                     ""id"": ""5a498f47-d6c2-42d6-bd96-09f2d4447845"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -228,7 +257,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -239,7 +268,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -250,7 +279,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -261,7 +290,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -272,7 +301,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard & Mouse"",
-                    ""action"": ""Move"",
+                    ""action"": ""Aim Secondary"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -303,6 +332,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_PrimaryFire = m_Player.FindAction("Primary Fire", throwIfNotFound: true);
         m_Player_SecondaryFire = m_Player.FindAction("Secondary Fire", throwIfNotFound: true);
+        m_Player_AimPrimary = m_Player.FindAction("Aim Primary", throwIfNotFound: true);
+        m_Player_AimSecondary = m_Player.FindAction("Aim Secondary", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -367,6 +398,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_PrimaryFire;
     private readonly InputAction m_Player_SecondaryFire;
+    private readonly InputAction m_Player_AimPrimary;
+    private readonly InputAction m_Player_AimSecondary;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -374,6 +407,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @PrimaryFire => m_Wrapper.m_Player_PrimaryFire;
         public InputAction @SecondaryFire => m_Wrapper.m_Player_SecondaryFire;
+        public InputAction @AimPrimary => m_Wrapper.m_Player_AimPrimary;
+        public InputAction @AimSecondary => m_Wrapper.m_Player_AimSecondary;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -392,6 +427,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SecondaryFire.started += instance.OnSecondaryFire;
             @SecondaryFire.performed += instance.OnSecondaryFire;
             @SecondaryFire.canceled += instance.OnSecondaryFire;
+            @AimPrimary.started += instance.OnAimPrimary;
+            @AimPrimary.performed += instance.OnAimPrimary;
+            @AimPrimary.canceled += instance.OnAimPrimary;
+            @AimSecondary.started += instance.OnAimSecondary;
+            @AimSecondary.performed += instance.OnAimSecondary;
+            @AimSecondary.canceled += instance.OnAimSecondary;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -405,6 +446,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @SecondaryFire.started -= instance.OnSecondaryFire;
             @SecondaryFire.performed -= instance.OnSecondaryFire;
             @SecondaryFire.canceled -= instance.OnSecondaryFire;
+            @AimPrimary.started -= instance.OnAimPrimary;
+            @AimPrimary.performed -= instance.OnAimPrimary;
+            @AimPrimary.canceled -= instance.OnAimPrimary;
+            @AimSecondary.started -= instance.OnAimSecondary;
+            @AimSecondary.performed -= instance.OnAimSecondary;
+            @AimSecondary.canceled -= instance.OnAimSecondary;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -436,5 +483,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnPrimaryFire(InputAction.CallbackContext context);
         void OnSecondaryFire(InputAction.CallbackContext context);
+        void OnAimPrimary(InputAction.CallbackContext context);
+        void OnAimSecondary(InputAction.CallbackContext context);
     }
 }

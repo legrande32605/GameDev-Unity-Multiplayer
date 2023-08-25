@@ -31,6 +31,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Aim Primary",
+                    "type": "Value",
+                    "id": "b4d2d74c-b980-487a-b300-ea1b7017d56f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Aim Secondary",
+                    "type": "Button",
+                    "id": "c3018524-b55a-4b60-9ec7-a403832bce6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -189,13 +207,24 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "",
+                    "id": "72f089d7-7d68-42ff-8b3f-486dac9a97f8",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard & Mouse",
+                    "action": "Aim Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "ZC",
                     "id": "5a498f47-d6c2-42d6-bd96-09f2d4447845",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -206,7 +235,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -217,7 +246,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -228,7 +257,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -239,7 +268,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -250,7 +279,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard & Mouse",
-                    "action": "Move",
+                    "action": "Aim Secondary",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

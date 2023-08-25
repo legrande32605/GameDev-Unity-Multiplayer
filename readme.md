@@ -198,12 +198,14 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 6: Player Aiming 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Modify Player Input to aim the turret at the cursor.
+    > - Add Aim to input controls
+    > - Set the aim to position as a variable so events are not called every time the mouse moves
+    > - Generate Player Aim Script
+    >   - Make NetworkBehavior
+    >   - Mouse Position - Turret Position = aim vector
+    >   - Added in Machine gun aiming code.
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Player Aiming](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 7: Networked Projectiles 
  

@@ -209,9 +209,13 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
 
 - Part 7: Networked Projectiles 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Create Server and Client Side Projectiles
+    > - Create Base Prefab that has code for both server and client projectile
+    >   - Lifetime Script.  Self Destruct after 2 seconds
+    >   - Destory on Contact Script.  It hits anything and goes boom
+    >   - Add collision Box and RigidBody
+    > - Client Side Projectile
+    >   - Add a Sprite so the shell looks proper on screen
 <p> </p> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Networked Projectiles](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)

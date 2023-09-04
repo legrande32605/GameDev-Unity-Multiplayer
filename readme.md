@@ -218,16 +218,26 @@ Graphic in this game are provided by [GameDev.TV](https://gamedev.tv) and design
     >   - Add a Sprite so the shell looks proper on screen
 <p> </p> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Networked Projectiles](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Artwork](./Assets/Images/Thumb%20-%20Section2-Lesson7.png)](./Assets/Images/Section2-Lesson7.png)
 
 - Part 8: Firing Projectiles 
  
-    > Summary: Lorem ipsum dolor sit amet
-    > - consectetur adipiscing elit
-    > - sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    > Summary: Create a fake projectile for the client
+    > - Place Projectiles on their own Layer (not sorting layer)
+    > - Set Physics and 2DPhysics to allow collisions between approprate layers
+    > - Create Projectile Launcher Script
+    >   - References to inputReader, projectileSpawnPoint, ClientProjectilePrefab, ServerProjectilePrefab
+    >   - Add setting for projectile speed
+    >   - Create a projectileSpawnPoint on the tip of the turret
+    >   - add script to the playerPrefab
+    >   - Link all the references
+    > - Subscribe/Unsubscribe to the primaryFire event
+    > - in Update() if firing, create:
+    >   - dummy round to avoid latency issue
+    >   - call server RPC to fire offical round
+    >   - call client RPC so everyone sees the round fire.
+    > - Repeat process for secondary weapon
 <p> </p> 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Firing Projectiles](./Assets/Images/Thumb%20-%20future.png)](./Assets/Images/future.png)
 
 - Part 9: Health Component 
  
